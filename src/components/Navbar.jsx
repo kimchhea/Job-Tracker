@@ -1,36 +1,34 @@
+import ".././index.css";
 import { Link } from "react-router-dom";
+import { Aperture } from "lucide-react";
 import { useState } from "react";
 const links = [
   { label: "Home", path: "/" },
-  { label: "Find Job", path: "find" },
+  { label: "Find Job", path: "/find" },
   { label: "Messages", path: "message" },
   { label: "Community", path: "community" },
   { label: "About us", path: "about" },
 ];
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+  const [isOpen, IssetOpen] = useState(false);
   return (
-    <nav className="bg-blue-600 text-white px-4 py-3">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-lg font-bold">Job Tracker</h1>
-        <button className="block md:hidden" onClick={() => setIsOpen(!isOpen)}>
-          ☰
-        </button>
-        <ul
-          className={`flex-col md:flex md:flex-row space-y-2 md:space-y-0 md:space-x-6 ${
-            isOpen ? "block" : "hidden"
-          }`}
-        >
-          {links.map((link, index) => (
-            <li key={index}>
-              <Link to={link.path} className="hover:underline">
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+    <nav className="navbar bg-primary">
+      <div className="container-fluid">
+        <div className="col-12 d-flex justify-content-around align-item-center py-1">
+          <div className="logo-img text-light">
+            <h2><Aperture></Aperture>  Job-Tracker</h2>
+          </div>
+          <ul className="d-flex gap-3 fs-3 px-3 list-unstyled pt-1">
+            {links.map((link, index) => (
+              <li key={index} className="nav-item  text-light">
+                <a className="nav-link" href={link.path}>
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </nav>
   );

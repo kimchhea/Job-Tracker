@@ -1,3 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  font-family: monospace;
+  width: 100%!important;
+  /* font-size: 1rem; */
+}
+
+.nav-link:hover {
+  color: rgb(255, 230, 0) !important;
+}
+/* section search */
+.card {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}
+.card-search .card .card-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+.ff {
+  font-family:sans-serif!important;
+}
+body {
+    width: !important;
+  background-color: rgb(255, 255, 255) !important;
+}
+.form-check-input:checked {
+  background-color: black !important; /* Sets the checkbox background to black when checked */
+  border-color: black !important; /* Changes the border color of the checkbox to black */
+}
+.form-check-input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.form-check-input {
+  border-color: black !important; /* Changes the border color of the checkbox to black */
+}
