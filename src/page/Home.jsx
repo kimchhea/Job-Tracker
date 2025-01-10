@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { homepage } from "../data/homepage";
-function Hone() {
+function Home() {
   return (
-    <body>
+    <body >
       <div className="container-fluid  w-100 ">
         <div className="col-12 mt-4 d-flex justify-content-center ">
           <section className="col-3 card-search ">
@@ -179,7 +179,9 @@ function Hone() {
                     <div className="col-12 d-flex justify-content-between mt-1 mb-2">
                       <p className="fs-4 fw-bold">{data.salary} $/Month</p>
                       <button className="btn btn-secondary fs-5 ">
+                        <a href="Details" className="nav-link">
                         Details
+                        </a>
                       </button>
                     </div>
                   </div>
@@ -193,4 +195,4 @@ function Hone() {
   );
 }
 
-export default Hone;
+export default Home;

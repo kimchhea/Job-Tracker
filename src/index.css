@@ -4,9 +4,12 @@
 
 :root {
   width: 100% !important;
-  --main-color:#30326b63;
+  --main-color:#ffb20d4c;
   background-color: rgba(255, 255, 255, 0.334) !important;
 
+}
+.container-fluid{
+  width: 100%!important;
 }
 .nav-link:hover {
   color: rgb(255, 230, 0) !important;
@@ -52,4 +55,7 @@ img{
   border-radius: 10px!important;
   backdrop-filter: blur(10px) !important;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.card{
+  background-color: var(--main-color)!important;
 }

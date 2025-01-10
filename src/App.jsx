@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./layout/RootLayout.jsx";
 import Home from "./page/Home.jsx";
+import Details from "./page/Details.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
             Page Not Found
           </h2>
         ),
+      },
+      {
+        path: "Details",
+        element: <Details></Details>,
       },
     ],
   },
