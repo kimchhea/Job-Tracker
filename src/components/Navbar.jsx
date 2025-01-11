@@ -8,6 +8,7 @@ const links = [
   { label: "Messages", path: "message" },
   { label: "Community", path: "community" },
   { label: "About us", path: "about" },
+  { label: "Login", path: "login" },
 ];
 
 const Navbar = () => {

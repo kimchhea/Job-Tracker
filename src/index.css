@@ -14,6 +14,9 @@
 .nav-link:hover {
   color: rgb(255, 230, 0) !important;
 }
+.nav-link:focus {
+  color: rgb(255, 230, 0) !important;
+}
 /* section search */
 .card {
   border-radius: 10px !important;

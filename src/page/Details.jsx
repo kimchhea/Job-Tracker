@@ -1,6 +1,7 @@
 import { homepage } from "../data/homepage";
 import Card from "../components/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 function Details() {
   const sliceArr = homepage.slice(1, 4);
   return (
@@ -41,14 +42,17 @@ function Details() {
                 <hr className="fw-bold text-dark" />
                 <div className="col-12 d-flex justify-content-between mt-1 mb-2">
                   <p className="fs-4 fw-bold">{data.salary} $/Month</p>
-                  <button className="btn btn-secondary fs-5 ">Details</button>
+                  <button className="btn btn-secondary fs-5 ">
+                    <Link className="nav-link" to={`details/${data.id.toString()}`}>Details</Link>
+                  </button>
                 </div>
               </div>
             ))}
           </section>
           <section className="col-7 card-details border  border-2 rounded ">
             <Card></Card>
-          </section>;
+          </section>
+          ;
         </div>
       </div>
     </div>

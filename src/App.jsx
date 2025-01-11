@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./layout/RootLayout.jsx";
 import Home from "./page/Home.jsx";
+import Find from "./page/Find.jsx";
 import Details from "./page/Details.jsx";
 const router = createBrowserRouter([
   {
@@ -13,8 +14,8 @@ const router = createBrowserRouter([
       },
       {
         path: "find",
-        element: (
-          <h2 className="text-center text-green-600 font-bold">Find Job</h2>
+        element: (<Find></Find>
+          
         ),
       },
       {
