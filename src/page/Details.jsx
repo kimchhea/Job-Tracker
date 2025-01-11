@@ -1,4 +1,5 @@
 import { homepage } from "../data/homepage";
+import Card from "../components/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 function Details() {
   const sliceArr = homepage.slice(1, 4);
@@ -9,7 +10,7 @@ function Details() {
 
         <div className="row d-flex justify-content-evenly mt-5">
           {/* ///// */}
-          <section className="col-4 card-more border  border-2 rounded   ">
+          <section className="col-4 card-more border  border-2 rounded rounded-3  ">
             <p className="fs-4 fw-bold pt-4">View more Company</p>
             {sliceArr.map((data) => (
               <div className="card px-3 mb-4" key={data.id}>
@@ -46,27 +47,8 @@ function Details() {
             ))}
           </section>
           <section className="col-7 card-details border  border-2 rounded ">
-            <div className="col-12 w-100 mt-3">
-              <div className="d-flex justify-content-between">
-                <h1>Sr. UX Designer</h1>
-                <div className="d-flex justify-content-around gap-2 ">
-                  <button className="btn btn-primary">Expert</button>
-                  <button className="btn btn-warning">Post more</button>
-                  <button className="btn btn-secondary">Experience</button>
-                </div>
-              </div>
-              <hr className="mt-4 w-100 " />
-              <div className="card-about-role px-2 ">
-                <h3>
-                  About role 
-                </h3>
-                
-              </div>
-              <div className="card-responsible"></div>
-              <div className="card-requirement"></div>
-
-            </div>
-          </section>
+            <Card></Card>
+          </section>;
         </div>
       </div>
     </div>

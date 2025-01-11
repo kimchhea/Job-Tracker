@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { homepage } from "../data/homepage";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <body >
@@ -179,9 +180,9 @@ function Home() {
                     <div className="col-12 d-flex justify-content-between mt-1 mb-2">
                       <p className="fs-4 fw-bold">{data.salary} $/Month</p>
                       <button className="btn btn-secondary fs-5 ">
-                        <a href="Details" className="nav-link">
+                        <Link to="Details" className="nav-link">
                         Details
-                        </a>
+                        </Link>
                       </button>
                     </div>
                   </div>
