@@ -43,10 +43,15 @@ const router = createBrowserRouter([
           </h2>
         ),
       },
+      // {
+      //   path: "Details",
+      //   element: <Details></Details>,
+      // },
       {
-        path: "Details",
-        element: <Details></Details>,
-      },
+        path:"details/:id",
+        element:<Details></Details>,
+      }
+    
     ],
   },
 ]);

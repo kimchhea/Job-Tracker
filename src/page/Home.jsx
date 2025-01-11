@@ -3,7 +3,7 @@ import { homepage } from "../data/homepage";
 import { Link } from "react-router-dom";
 function Home() {
   return (
-    <body >
+    <body>
       <div className="container-fluid  w-100 ">
         <div className="col-12 mt-4 d-flex justify-content-center ">
           <section className="col-3 card-search ">
@@ -119,18 +119,17 @@ function Home() {
                   online work
                 </label>
               </div>
-              
             </div>
             <div className="card-img mt-5 rounded-2 overflow-hidden">
-                <img
-                  src="https://i.pinimg.com/736x/90/a8/38/90a838476fc55bcd3d1225eb80b31740.jpg"
-                  alt=""
-                />
-                <button className="btn btn-warning w-100 fs-4 fw-bold py-1 text-dark mt-2">
-                  {" "}
-                  Check now
-                </button>
-              </div>
+              <img
+                src="https://i.pinimg.com/736x/90/a8/38/90a838476fc55bcd3d1225eb80b31740.jpg"
+                alt=""
+              />
+              <button className="btn btn-warning w-100 fs-4 fw-bold py-1 text-dark mt-2">
+                {" "}
+                Check now
+              </button>
+            </div>
           </section>
           {/* /////////////////////////////// */}
           <section className="card-recommended  w-100 col-7">
@@ -180,8 +179,8 @@ function Home() {
                     <div className="col-12 d-flex justify-content-between mt-1 mb-2">
                       <p className="fs-4 fw-bold">{data.salary} $/Month</p>
                       <button className="btn btn-secondary fs-5 ">
-                        <Link to="Details" className="nav-link">
-                        Details
+                        <Link to={`details/${data.id.toString()}`} className="nav-link">
+                          Details
                         </Link>
                       </button>
                     </div>
