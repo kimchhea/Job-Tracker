@@ -22,8 +22,7 @@ const Find = () => {
         </button>
       </div>
       <div className="col-12 mt-4 d-flex justify-content-between gap-2 ">
-        <Sidebar></Sidebar>
-
+        <Sidebar ></Sidebar>
         <Find_component></Find_component>
       </div>
     </div>

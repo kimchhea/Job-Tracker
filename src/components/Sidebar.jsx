@@ -2,7 +2,7 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <section className="col-3 card-search mt-3 ">
+    <section className="col-3 card-search ">
       <div className="card mt-2">
         <div className="card-img">
           <img

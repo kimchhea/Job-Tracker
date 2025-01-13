@@ -6,7 +6,7 @@ function Home() {
   return (
     <body>
       <div className="container-fluid  w-100 ">
-        <div className="col-12 mt-4 d-flex justify-content-center ">
+        <div className="col-12  d-flex justify-content-center ">
           <Sidebar></Sidebar>
           {/* /////////////////////////////// */}
           <section className="card-recommended  w-100 col-7">
