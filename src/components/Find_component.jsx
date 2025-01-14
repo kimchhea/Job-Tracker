@@ -1,19 +1,20 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { homepage } from "../data/homepage";
-
 const normalizeText = (text) => {
   return text
     .toLowerCase() // Convert to lowercase
-    .replace(/[_-]/g, " ") // Replace underscores and dashes with spaces
-    .replace(/\s+/g, " ") // Replace multiple spaces with a single space
+    .normalize("NFD") // Normalize accented characters
+    .replace(/[\u0300-\u036f]/g, "") // Remove diacritics
+    .replace(/[^a-z0-9\s]/g, "") // Remove all non-alphanumeric characters
+    .replace(/\s+/g, "") // Replace multiple spaces with a single space
     .trim(); // Remove extra spaces
 };
 
-const Find_component = () => {
-  const [query, setQuery] = useState(""); // Input query state
-  const [filteredResults, setFilteredResults] = useState(homepage); // Filtered results state
+const FindComponent = () => {
+  
+  const [query, setQuery] = useState(""); // User's search query
+  const [filteredResults, setFilteredResults] = useState(homepage); // Filtered jobs
 
-  // Handle filtering when the button is clicked
   const handleSearch = () => {
     const normalizedQuery = normalizeText(query); // Normalize the query
 
@@ -36,35 +37,44 @@ const Find_component = () => {
 
     setFilteredResults(filtered); // Update results state
   };
+  const Reset =() =>{
+    setQuery("");
+    setFilteredResults(homepage);
+  }
 
   return (
     <section className="card-find col-9 mt-2">
       <div className="col-12">
-        {/* Search Input */}
-        <div className="d-flex">
+        {/* Search Bar */}
+        <div className="d-flex align-items-center mb-3">
           <input
             type="text"
             placeholder="Search for jobs..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="form-control me-2"
+            className="form-control py-3 search-input"
           />
-          <button className="btn btn-primary" onClick={handleSearch}>
+          <button
+            onClick={handleSearch}
+            className="btn btn-primary ms-2 px-3 py-3"
+          >
             Search
+          </button>
+          <button
+            onClick={Reset}
+            className="btn btn-danger ms-2 px-3 py-3"
+          >
+            Reset
           </button>
         </div>
 
-        {/* Search Result Count */}
-        <p className="fs-2 ps-2 mt-3">
+        {/* Search Results */}
+        <p className="fs-2 ps-2">
           Search result:{" "}
           <span>
-            <button className="btn btn-warning">
-              {filteredResults.length}
-            </button>
+            <button className="btn btn-warning">{filteredResults.length}</button>
           </span>
         </p>
-
-        {/* Display Filtered Results */}
         {filteredResults.map((data, index) => (
           <div
             key={index}
@@ -112,16 +122,9 @@ const Find_component = () => {
             <li className="text-dark ps-2">{data.description}</li>
           </div>
         ))}
-
-        {/* No Results Found */}
-        {filteredResults.length === 0 && (
-          <p className="text-danger text-center mt-3 fs-4">
-            No jobs match your search :) 
-          </p>
-        )}
       </div>
     </section>
   );
 };
 
-export default Find_component;
+export default FindComponent;

@@ -1,4 +1,5 @@
 import Sidebar from "../components/Sidebar";
+import { useState } from "react";
 import { homepage } from "../data/homepage";
 import Find_component from "../components/Find_component";
 const Find = () => {

@@ -66,15 +66,14 @@ img {
    */
   background-color: #f2d4ae !important;
 }
-section{
-  background-color: #f2f0f0!important;
-
+section {
+  background-color: #f2f0f0 !important;
 }
 .search-input {
-border:none;
+  border: none !important;
 }
 .search-input:focus {
-  outline: none;
-  border:1px solid rgb(255, 230, 0);
+  outline: none !important;
+  box-shadow: none!important;
 
-  }
+}
