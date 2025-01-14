@@ -11,7 +11,6 @@ const normalizeText = (text) => {
 };
 
 const FindComponent = () => {
-  
   const [query, setQuery] = useState(""); // User's search query
   const [filteredResults, setFilteredResults] = useState(homepage); // Filtered jobs
 
@@ -37,10 +36,10 @@ const FindComponent = () => {
 
     setFilteredResults(filtered); // Update results state
   };
-  const Reset =() =>{
+  const Reset = () => {
     setQuery("");
     setFilteredResults(homepage);
-  }
+  };
 
   return (
     <section className="card-find col-9 mt-2">
@@ -60,10 +59,7 @@ const FindComponent = () => {
           >
             Search
           </button>
-          <button
-            onClick={Reset}
-            className="btn btn-danger ms-2 px-3 py-3"
-          >
+          <button onClick={Reset} className="btn btn-danger ms-2 px-3 py-3">
             Reset
           </button>
         </div>
@@ -72,7 +68,9 @@ const FindComponent = () => {
         <p className="fs-2 ps-2">
           Search result:{" "}
           <span>
-            <button className="btn btn-warning">{filteredResults.length}</button>
+            <button className="btn btn-warning">
+              {filteredResults.length}
+            </button>
           </span>
         </p>
         {filteredResults.map((data, index) => (
