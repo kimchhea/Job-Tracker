@@ -6,27 +6,26 @@ function Home() {
   return (
     <body>
       <div className="container-fluid  w-100 ">
-        <div className="col-12  d-flex justify-content-center ">
+        <div className="col-12  d-flex justify-content-center  ">
           <Sidebar></Sidebar>
           {/* /////////////////////////////// */}
-          <section className="card-recommended  w-100 col-7">
-            <div className="col-12 d-flex justify-content-between ms-5">
+          <section className="card-recommended w-100 col-7 ">
+            <div className="col-12 d-flex justify-content-between ms-4">
               <h1>
                 Recommened Job
                 <span>
-                  <button className="btn fs-5 btn-primary rounded round-4 ms-3">
+                  <button className="btn fs-5 btn-primary rounded round-4 ms-4">
                     {homepage.length}
                   </button>
                 </span>
               </h1>
-              <p className="fs-3 ff fw-bold text-end">Short by last updated</p>
+              <p className="fs-3 ff fw-bold ">Short by last updated</p>
             </div>
-            <div className="card-details col-12 mt-4">
-              <div className="row w-100 d-flex gap-1 justify-content-between ms-5 fs-3">
+            <div className="col-12 card-details col-12 mt-4 w-100 ms-4">
                 {/* //// */}
                 {homepage.map((data) => (
-                  <div className=" card-job mb-4" key={data.id}>
-                    <div className="col-12 mt-3 d-flex justify-content-between">
+                  <div className=" card-job w-100 px-3 py-1 " key={data.id}>
+                    <div className="col-12 mt-3 d-flex justify-content-between ">
                       <button className=" btn btn-primary w-50 rounded rounded-5 mb-1 ">
                         {data.data}
                       </button>
@@ -53,7 +52,7 @@ function Home() {
                       ))}
                     </div>
                     <hr className="fw-bold text-dark" />
-                    <div className="col-12 d-flex justify-content-between mt-1 mb-2">
+                    <div className="col-12 d-flex justify-content-between mt-1">
                       <p className="fs-4 fw-bold">{data.salary} $/Month</p>
                       <button className="btn btn-secondary fs-5 ">
                         <Link
@@ -66,7 +65,7 @@ function Home() {
                     </div>
                   </div>
                 ))}
-              </div>
+           
             </div>
           </section>
         </div>

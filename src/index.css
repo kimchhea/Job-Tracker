@@ -55,7 +55,6 @@ img {
 }
 .card-job {
   background: var(--main-color);
-  width: 390px !important;
   border-radius: 10px !important;
   backdrop-filter: blur(10px) !important;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -76,4 +75,15 @@ section {
   outline: none !important;
   box-shadow: none!important;
 
+}
+.card-details{
+  width: 100%!important;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, 390px)!important;
+  gap: 20px !important;
+  justify-content:space-around!important;
+}
+.card-job{
+  width: 390px!important;
+  height: 390px!important;
 }
