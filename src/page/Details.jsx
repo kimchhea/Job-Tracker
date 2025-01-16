@@ -6,8 +6,8 @@ function Details() {
   const sliceArr = homepage.slice(1, 4);
   return (
     <div className="container-fluid ">
-      <div className="col-12 w-100">
-        <h1 className="ps-4">Find your dream job here</h1>
+      <div className="col-12">
+        <h1 className="ps-2">Find your dream job here</h1>
 
         <div className="row d-flex justify-content-evenly mt-5">
           {/* ///// */}
@@ -49,7 +49,7 @@ function Details() {
               </div>
             ))}
           </section>
-          <section className="col-7 card-details border  border-2 rounded ">
+          <section className="col-7 card-detail border  border-2 rounded ">
             <Card></Card>
           </section>
           ;

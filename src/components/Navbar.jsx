@@ -5,7 +5,7 @@ import { useState } from "react";
 const links = [
   { label: "Home", path: "/" },
   { label: "Find Job", path: "/find" },
-  { label: "Messages", path: "message" },
+  { label: "Advice", path: "Advice" },
   { label: "Community", path: "community" },
   { label: "About us", path: "about" },
   { label: "Login", path: "login" },
@@ -18,8 +18,8 @@ const Navbar = () => {
       <div className="container-fluid">
         <div className="col-12 d-flex justify-content-around align-item-center ">
           <div className="logo-img text-light pt-2">
-            <h2>
-              <Aperture></Aperture> Job-Tracker
+            <h2 >
+               Job-Tracker
             </h2>
           </div>
           <ul className="d-flex gap-3 fs-3 px-3 list-unstyled pt-2">

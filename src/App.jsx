@@ -19,9 +19,9 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "message",
+        path: "advice",
         element: (
-          <h2 className="text-center text-red-600 font-bold">Message</h2>
+          <h2 className="text-center text-red-600 font-bold">Advice</h2>
         ),
       },
       {
