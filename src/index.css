@@ -1,11 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-.nav-link:hover {
-  color: rgb(255, 230, 0) !important;
+li a:hover {
+  color: var(--color-gold) !important;
 }
-.nav-link:focus {
-  color: rgb(255, 230, 0) !important;
+li a:focus {
+  color: var(--color-gold) !important;
 }
+:root {
+  --color-dark-blue: #040d26;
+  --color-navy-gray: #262f40;
+  --color-light-gray: #d2d6d9;
+  --color-gold: #d9a443;
+  --color-brown: #593119;
+}
+body {
+  color: var(--color-dark-blue) !important;
+  background-color: var(--) !important;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: var(--color-navy-gray) !important;
+  color: var(--color-light-gray) !important;
+  padding: 1rem;
+}
+
 /* section search */
 .card {
   border-radius: 10px !important;
@@ -41,23 +61,54 @@ img {
   overflow-y: hidden;
 }
 .card-job {
-  background: var(--main-color);
-  border-radius: 10px !important;
-  backdrop-filter: blur(10px) !important;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: var(-) !important;
+  border: 2px solid var(--light-gray) !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  padding: 1rem !important;
+  height: 390px !important;
+  margin: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
-/* .card {
-  background-color: #f2d4ae !important;
+.card-job:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
 }
-section {
-  background-color: #f2f0f0 !important;
-} */
+.card {
+  background-color: #d9d9d9 !important;
+}
+
 .search-input {
   border: none !important;
 }
 .search-input:focus {
   outline: none !important;
-  box-shadow: none!important;
-
+  box-shadow: none !important;
 }
+button:hover {
+  background-color: var(--accent-orange) !important;
+}
+.btn-secondary {
+  background:#012840!important;
+}
+.btn-secondary:hover {
+  background: #a6a6a6 !important;
+  color: #040d26 !important;
+}
+Link .nav-link:focus {
+  background: #a6a6a6 !important;
+  color: #040d26 !important;
+}
+.btn-outline{
+background: var(--color-navy-gray)!important;
+color:var(--color-light-gray)!important;
+}
+.btn-primary{
+  background: var(--color-gold)!important;
+  border: none!important;
+  color: #040d26!important;
+}
+.btn-outline:hover{
+  background: var(--color-dark-blue)!important;
+  color:var(--color-light-gray)!important;
+  }

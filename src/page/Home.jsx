@@ -21,12 +21,13 @@ function Home() {
               </h1>
               <p className="fs-3 ff fw-bold ">Short by last updated</p>
             </div>
-            <div className="row card-details mt-1  ms-1">
+            <div className="row card-details mt-1 ">
                 {/* //// */}
                 {homepage.map((data) => (
-                  <div className=" card-job col-4 px-3 py-1" key={data.id}>
+                  <div className=" col-4" key={data.id}>
+                    <div className="col-11 card card-job px-3 py-2 mb-4 w-100 ">
                     <div className="col-12 mt-3 d-flex justify-content-between ">
-                      <button className=" btn btn-primary w-50 rounded rounded-5 mb-1 ">
+                      <button className=" btn btn-primary disabled w-50 rounded rounded-5 mb-1 ">
                         {data.data}
                       </button>
                       <button className="btn btn-secondary">SAVE</button>
@@ -44,7 +45,7 @@ function Home() {
                     <div className="col-12  d-flex gap-3 fs-5 mt-2">
                       {data.type.map((type, index) => (
                         <button
-                          className="btn btn-outline-primary px-2 "
+                          className="btn btn-outline  px-2 "
                           key={index}
                         >
                           {type}
@@ -64,8 +65,8 @@ function Home() {
                       </button>
                     </div>
                   </div>
+                </div>
                 ))}
-           
             </div>
           </section>
         </div>

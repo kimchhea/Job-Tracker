@@ -14,10 +14,10 @@ const links = [
 const Navbar = () => {
   const [isOpen, IssetOpen] = useState(false);
   return (
-    <nav className="navbar bg-primary position-sticky top-0 z-3 ">
+    <nav className="navbar position-sticky top-0 z-3 ">
       <div className="container-fluid">
-        <div className="col-12 d-flex justify-content-around align-item-center ">
-          <div className="logo-img text-light pt-2">
+        <div className="col-12 d-flex justify-content-between px-5 align-item-center ">
+          <div className="logo-img text-light pt-2 ps-4">
             <h2 >
                Job-Tracker
             </h2>
