@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./layout/RootLayout.jsx";
 import Home from "./page/Home.jsx";
 import Find from "./page/Find.jsx";
+import Advice from "./page/Advice.jsx";
 import Details from "./page/Details.jsx";
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       {
         path: "advice",
         element: (
-          <h2 className="text-center text-red-600 font-bold">Advice</h2>
+         <Advice></Advice>
         ),
       },
       {

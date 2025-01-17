@@ -11,7 +11,6 @@ function Card() {
   if (filteredData.length === 0) {
     return <h2>Data not found!</h2>;
   }
-
   return (
     <div className="col-12 w-100 mt-3">
       {filteredData.map((data, index) => (
