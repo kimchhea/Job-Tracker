@@ -1,18 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root {
-  width: 100% !important;
-  --main-color: #ffb20d4c;
-}
-#root {
-  background: #f2f0f0 !important;
-  width: 100%;
-  height: auto; /* Full viewport height */
-}
-
-.container-fluid {
-  width: 100% !important;
-}
 .nav-link:hover {
   color: rgb(255, 230, 0) !important;
 }
@@ -60,14 +47,12 @@ img {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-.card {
-  /* background-color: var(--main-color)!important;
-   */
+/* .card {
   background-color: #f2d4ae !important;
 }
 section {
   background-color: #f2f0f0 !important;
-}
+} */
 .search-input {
   border: none !important;
 }
@@ -75,15 +60,4 @@ section {
   outline: none !important;
   box-shadow: none!important;
 
-}
-.card-details{
-  width: 100%!important;
-  display: grid;
-  grid-template-columns:repeat(auto-fit, 390px)!important;
-  gap: 20px !important;
-  justify-content:space-around!important;
-}
-.card-job{
-  width: 390px!important;
-  height: 390px!important;
 }

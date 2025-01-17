@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <body>
-      <div className="container-fluid  w-100 ">
-        <div className="col-12  d-flex justify-content-center  ">
+      <div className="container-fluid mt-4">
+        <div className="col-12  d-flex justify-content-around ">
           <Sidebar></Sidebar>
-          {/* /////////////////////////////// */}
-          <section className="card-recommended w-100 col-7 ">
-            <div className="col-12 d-flex justify-content-between ms-4">
+          {/* ///////////////////////////// m// */}
+          <section className="card-recommended col-8">
+            <div className="col-12 d-flex justify-content-between ">
               <h1>
                 Recommened Job
                 <span>
@@ -21,10 +21,10 @@ function Home() {
               </h1>
               <p className="fs-3 ff fw-bold ">Short by last updated</p>
             </div>
-            <div className="col-12 card-details col-12 mt-4 w-100 ms-4">
+            <div className="row card-details mt-1  ms-1">
                 {/* //// */}
                 {homepage.map((data) => (
-                  <div className=" card-job w-100 px-3 py-1 " key={data.id}>
+                  <div className=" card-job col-4 px-3 py-1" key={data.id}>
                     <div className="col-12 mt-3 d-flex justify-content-between ">
                       <button className=" btn btn-primary w-50 rounded rounded-5 mb-1 ">
                         {data.data}
@@ -41,7 +41,7 @@ function Home() {
                       </div>
                     </div>
                     <span className="fs-5">{data.location}</span>
-                    <div className="col-12 w-100 d-flex gap-3 fs-5 mt-2">
+                    <div className="col-12  d-flex gap-3 fs-5 mt-2">
                       {data.type.map((type, index) => (
                         <button
                           className="btn btn-outline-primary px-2 "

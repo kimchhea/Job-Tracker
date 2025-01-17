@@ -5,7 +5,7 @@ const RootLayout = () => {
   return (
     <>
       <Navbar />
-      <main className="container mx-auto p-4">
+      <main className="container-fluid mx-auto p-4">
         <Outlet />
       </main>
     </>
