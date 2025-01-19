@@ -27,8 +27,8 @@ function Card() {
                 </button>
               ))}
             </div>
-          </div>
-          <hr className="mt-4 " />
+          </div> 
+          <hr className="mt-3 " />
           <div className="card-about-role px-2">
             <h3 className="fw-bold">About Role</h3>
             <p className="fs-5">{data.aboutJob}</p>

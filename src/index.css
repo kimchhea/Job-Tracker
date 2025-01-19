@@ -86,9 +86,9 @@ img {
   outline: none !important;
   box-shadow: none !important;
 }
-button:hover {
+/* button:hover {
   background-color: var(--accent-orange) !important;
-}
+} */
 .btn-secondary {
   background:#012840!important;
 }
@@ -113,4 +113,7 @@ color:var(--color-light-gray)!important;
 .btn-outline:hover{
   background: var(--color-dark-blue)!important;
   color:var(--color-light-gray)!important;
+  }
+  .text-card-details{
+    padding-left: 2.5rem!important;
   }
