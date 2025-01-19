@@ -10,11 +10,11 @@ function Home() {
           <Sidebar></Sidebar>
           {/* ///////////////////////////// m// */}
           <section className="card-recommended col-8">
-            <div className="col-12 d-flex justify-content-between ">
+            <div className="col-12 d-flex justify-content-between ms-3 mb-2">
               <h1>
                 Recommened Job
                 <span>
-                  <button className="btn fs-5 btn-primary rounded round-4 ms-4">
+                  <button className="btn fs-5 btn-primary disabled rounded round-4 ms-4">
                     {homepage.length}
                   </button>
                 </span>
@@ -25,7 +25,7 @@ function Home() {
                 {/* //// */}
                 {homepage.map((data) => (
                   <div className=" col-4" key={data.id}>
-                    <div className="col-11 card card-job px-3 py-2 mb-4 w-100 ">
+                    <div className="col-11 card card-job px-3 py-2 mb-2 w-100 ">
                     <div className="col-12 mt-3 d-flex justify-content-between ">
                       <button className=" btn btn-primary disabled w-50 rounded rounded-5 mb-1 ">
                         {data.data}

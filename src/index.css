@@ -38,6 +38,7 @@ body {
 }
 body {
   font-family: "Montserrat", serif !important;
+  background-color: #d2d6d9!important;
 }
 .form-check-input:checked {
   background-color: black !important; /* Sets the checkbox background to black when checked */
@@ -106,7 +107,8 @@ color:var(--color-light-gray)!important;
 .btn-primary{
   background: var(--color-gold)!important;
   border: none!important;
-  color: #040d26!important;
+  font-weight: bold!important;
+  color: var(--color-dark-blue)!important;
 }
 .btn-outline:hover{
   background: var(--color-dark-blue)!important;

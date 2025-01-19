@@ -15,9 +15,9 @@ const Sidebar = () => {
           </button>
         </div>
       </div>
-      <h3 className="ps-1 pt-2 ff">Fillter : </h3>
-      <div className="card-checkbox ff mt-4 fs-5 fw-bold ">
-        <p className="ff fs-4">Working Scadule</p>
+      <h3 className="ps-1 pt-2 ff">Fillter (Select the options) </h3>
+      <div className="card-checkbox ff mt-4 fs-4 fw-bold ">
+        <p className="ff fs-3">Working Scadule</p>
         <div className="form-check">
           <input type="checkbox" className="form-check-input" id="fullTime" />
           <label className="form-check-label px-4" htmlFor="fullTime">
@@ -56,7 +56,7 @@ const Sidebar = () => {
             Volunteering
           </label>
         </div>
-        <p className="pt-4 fs-4 ff">Employment type</p>
+        <p className="pt-4 fs-3ff">Employment type</p>
         <div className="form-check">
           <input type="checkbox" className="form-check-input" id="Fullday" />
           <label className="form-check-label px-4" htmlFor="fullday">
