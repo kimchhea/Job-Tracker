@@ -7,6 +7,7 @@ li a:focus {
   color: var(--color-gold) !important;
 }
 :root {
+  width: 100%!important;
   --color-dark-blue: #040d26;
   --color-navy-gray: #262f40;
   --color-light-gray: #d2d6d9;
@@ -18,6 +19,7 @@ body {
   background-color: var(--) !important;
   margin: 0;
   padding: 0;
+  width: 100%!important;
 }
 
 .navbar {
@@ -120,3 +122,11 @@ color:var(--color-light-gray)!important;
   .border{
     border-color: var(--color-navy-gray);
   }
+  .main-card{
+    background-color: var(--color-gold)!important;
+  }
+.card-img img{
+  width: 100%!important;
+  height: 100%!important;
+  object-fit: fill!important;
+}
