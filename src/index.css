@@ -117,3 +117,6 @@ color:var(--color-light-gray)!important;
   .text-card-details{
     padding-left: 2.5rem!important;
   }
+  .border{
+    border-color: var(--color-navy-gray);
+  }

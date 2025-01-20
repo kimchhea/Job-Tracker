@@ -6,11 +6,11 @@ function Home() {
   return (
     <body>
       <div className="container-fluid mt-4">
-        <div className="col-12  d-flex justify-content-around ">
+        <div className="col-12  d-flex justify-content-between gap-3  ">
           <Sidebar></Sidebar>
           {/* ///////////////////////////// m// */}
-          <section className="card-recommended col-8">
-            <div className="col-12 d-flex justify-content-between ms-3 mb-2">
+          <section className="card-recommended col-9 border border-dark border-1 ps-1 pe-5 rounded rounded-2 mt-3">
+            <div className="col-12 d-flex justify-content-between ms-3 mb-2 mt-3">
               <h1>
                 Recommened Job
                 <span>

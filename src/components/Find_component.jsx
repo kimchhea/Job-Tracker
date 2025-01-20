@@ -42,10 +42,10 @@ const FindComponent = () => {
   };
 
   return (
-    <section className="card-find col-6 mt-2">
+    <section className="card-find col-7  ps-2 pe-4 py-3">
       <div className="col-12">
         {/* Search Bar */}
-        <div className="d-flex align-items-center mb-3">
+        <div className="d-flex align-items-center mb-3 ms-2">
           <input
             type="text"
             placeholder="Search for jobs..."
