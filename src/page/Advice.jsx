@@ -2,8 +2,8 @@ import React from "react";
 import Sidebar_right from "../components/Sidebar_right";
 const Advice = () => {
   return (
-    <div className="container-fluid">
-      <div className="col-12 main-card rounded rounded-2 px-3 ">
+    <div className="container-fluid ">
+      <div className="col-12 main-card rounded rounded-2 px-3">
         <div className="d-flex gap-2 justify-content-between">
           <div className="col-7 card-text">
             <h1 className="py-2 fw-bold">Your Career Journey Starts Here</h1>
@@ -28,11 +28,16 @@ const Advice = () => {
           </div>
         </div>
       </div>
-      <div className="col-12 mt-3 ">
-        <div className="row">
+      <div className="col-12 mt-3 px-2">
+        <div className="row d-flex justify-content-around ">
         <Sidebar_right></Sidebar_right>
-        <section className="col-8 ">
-          <label htmlFor="">Find here</label>
+        <section className="col-8 border border-dark rounded py-3 px-3">
+          <div className="col-12 d-flex justify-content-around bg-secondary px-3 py-3 rounded rounded-2">
+            <input type="text" id='advice' className="form-control "/>
+            <button className="btn btn-danger px-4 fs-5 py-2 mx-2">Reset</button>
+            <button className="btn btn-success px-4 fs-5 py-2">Search</button>
+          </div>
+          
         </section>
         </div>
       </div>
