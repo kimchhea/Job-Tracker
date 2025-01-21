@@ -1,4 +1,4 @@
-import React from "react";
+import advice from "../data/advice"
 import Sidebar_right from "../components/Sidebar_right";
 const Advice = () => {
   return (
@@ -37,7 +37,20 @@ const Advice = () => {
             <button className="btn btn-danger px-4 fs-5 py-2 mx-2">Reset</button>
             <button className="btn btn-success px-4 fs-5 py-2">Search</button>
           </div>
-          
+          <section className="col-12 mt-2">
+            <div className="card-advice border border-dark border-2 px-2 py-2 rounded rounded-2">
+              {advice.map((data,index)=>(
+              <div key={index}>
+              <h4>
+                {data.role}
+              </h4>
+              <p>
+                {data.advice}
+              </p>
+              </div>
+              ))}
+            </div>
+          </section>
         </section>
         </div>
       </div>
