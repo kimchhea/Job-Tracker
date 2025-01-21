@@ -1,4 +1,4 @@
-export const advice = [
+export const Teachjobs = [
   {
     role: "Software Developer/Engineer",
     advice: [
