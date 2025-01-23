@@ -6,7 +6,7 @@ const links = [
   { label: "Home", path: "/" },
   { label: "Find Job", path: "/find" },
   { label: "Advice", path: "Advice" },
-  { label: "Community", path: "community" },
+  // { label: "Community", path: "community" },
   { label: "About us", path: "about" },
   { label: "Login", path: "login" },
 ];
@@ -22,14 +22,17 @@ const Navbar = () => {
                Job-Tracker
             </h2>
           </div>
-          <ul className="d-flex gap-3 fs-3 px-3 list-unstyled pt-2">
-            {links.map((link, index) => (
+          <ul className="left-nav d-flex gap-3 fs-3 px-3 list-unstyled pt-2  ">
+            {links.map((link, index) => ( 
               <li key={index} className="nav-item  text-light">
                 <Link className="nav-link" to={link.path}>
                   {link.label}
                 </Link>
               </li>
             ))}
+            <li className="  text-light button-navbar">
+              <a href="" className=""> ☰</a>
+            </li>
           </ul>
         </div>
       </div>

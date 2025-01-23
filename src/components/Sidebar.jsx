@@ -2,7 +2,7 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <section className="col-3 card-search border mt-3  border-1 border-dark rounded rounded-3 px-3 py-2">
+    <section className="col-xxl-3 col-md-5 col-xl-3 col-sm-12 col card-search border mt-3  border-1 border-dark rounded rounded-3 px-3 py-2">
       <div className="card mt-2">
         <div className="card-img">
           <img
@@ -15,7 +15,7 @@ const Sidebar = () => {
           </button>
         </div>
       </div>
-      <h3 className="ps-1 pt-2 ff">Fillter (Select the options) </h3>
+      <h3 className="ps-1 pt-2 ff">Fillter</h3>
       <div className="card-checkbox ff mt-4 fs-4 fw-bold ">
         <p className="ff fs-3">Working Scadule</p>
         <div className="form-check">

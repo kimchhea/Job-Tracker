@@ -69,7 +69,7 @@ img {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
   padding: 1rem !important;
-  height: 390px !important;
+ /* height: 400px!important; */
   margin: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
@@ -130,3 +130,42 @@ color:var(--color-light-gray)!important;
   height: 100%!important;
   object-fit: fill!important;
 }
+@media (max-width:960px) {
+  .left-nav > .nav-item{
+    display: none!important;
+  }
+}
+@media (min-width:961px) {
+
+  .button-navbar{
+    display: none!important;
+  }
+}
+.button-navbar a{
+text-decoration: none!important;
+list-style: none!important;
+color: var(--color-light-gray);
+font-size: 2rem!important;
+}
+@media (max-width:1170px) {
+.card-recommended p{
+    font-size: 20px!important;
+  }
+  .card-recommended h1{
+    font-size: 22px!important;
+  }
+  .form-check-label {
+    font-size: 18px!important;
+  }
+  .card-checkbox p{
+    font-size: 18px!important;
+  }
+}
+@media (max-width:833px) {
+  .card-recommended p{
+      font-size: 17px!important;
+    }
+    .card-recommended h1{
+      font-size: 17px!important;
+    }
+  }
