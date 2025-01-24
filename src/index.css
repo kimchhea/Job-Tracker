@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
 
 li a:hover {
   color: var(--color-gold) !important;
@@ -7,7 +8,7 @@ li a:focus {
   color: var(--color-gold) !important;
 }
 :root {
-  width: 100%!important;
+  width: 100% !important;
   --color-dark-blue: #040d26;
   --color-navy-gray: #262f40;
   --color-light-gray: #d2d6d9;
@@ -19,7 +20,7 @@ body {
   background-color: var(--) !important;
   margin: 0;
   padding: 0;
-  width: 100%!important;
+  width: 100% !important;
 }
 
 .navbar {
@@ -40,7 +41,7 @@ body {
 }
 body {
   font-family: "Montserrat", serif !important;
-  background-color: #d2d6d9!important;
+  background-color: #d2d6d9 !important;
 }
 .form-check-input:checked {
   background-color: black !important; /* Sets the checkbox background to black when checked */
@@ -69,7 +70,7 @@ img {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
   padding: 1rem !important;
- /* height: 400px!important; */
+  height: 410px !important;
   margin: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
@@ -92,7 +93,7 @@ img {
   background-color: var(--accent-orange) !important;
 } */
 .btn-secondary {
-  background:#012840!important;
+  background: #012840 !important;
 }
 .btn-secondary:hover {
   background: #a6a6a6 !important;
@@ -102,70 +103,134 @@ Link .nav-link:focus {
   background: #a6a6a6 !important;
   color: #040d26 !important;
 }
-.btn-outline{
-background: var(--color-navy-gray)!important;
-color:var(--color-light-gray)!important;
+.btn-outline {
+  background: var(--color-navy-gray) !important;
+  color: var(--color-light-gray) !important;
 }
-.btn-primary{
-  background: var(--color-gold)!important;
-  border: none!important;
-  font-weight: bold!important;
-  color: var(--color-dark-blue)!important;
+.btn-primary {
+  background: var(--color-gold) !important;
+  border: none !important;
+  font-weight: bold !important;
+  color: var(--color-dark-blue) !important;
 }
-.btn-outline:hover{
-  background: var(--color-dark-blue)!important;
-  color:var(--color-light-gray)!important;
-  }
-  .text-card-details{
-    padding-left: 2.5rem!important;
-  }
-  .border{
-    border-color: var(--color-navy-gray);
-  }
-  .main-card{
-    background-color: var(--color-gold)!important;
-  }
-.card-img img{
-  width: 100%!important;
-  height: 100%!important;
-  object-fit: fill!important;
+.btn-outline:hover {
+  background: var(--color-dark-blue) !important;
+  color: var(--color-light-gray) !important;
 }
-@media (max-width:960px) {
-  .left-nav > .nav-item{
-    display: none!important;
-  }
+.text-card-details {
+  padding-left: 2.5rem !important;
 }
-@media (min-width:961px) {
-
-  .button-navbar{
-    display: none!important;
+.border {
+  border-color: var(--color-navy-gray);
+}
+.main-card {
+  background-color: var(--color-gold) !important;
+}
+.card-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: fill !important;
+}
+@media (max-width: 960px) {
+  .left-nav > .nav-item {
+    display: none !important;
   }
 }
-.button-navbar a{
-text-decoration: none!important;
-list-style: none!important;
-color: var(--color-light-gray);
-font-size: 2rem!important;
-}
-@media (max-width:1170px) {
-.card-recommended p{
-    font-size: 20px!important;
+@media (min-width: 961px) {
+  .button-navbar {
+    display: none !important;
   }
-  .card-recommended h1{
-    font-size: 22px!important;
+}
+.button-navbar a {
+  text-decoration: none !important;
+  list-style: none !important;
+  color: var(--color-light-gray);
+  font-size: 2rem !important;
+}
+@media (max-width: 1170px) {
+  .card-recommended p {
+    font-size: 15px !important;
+    padding-top: 10px !important;
+  }
+  .card-recommended h1 {
+    font-size: 15px !important;
   }
   .form-check-label {
-    font-size: 18px!important;
+    font-size: 18px !important;
   }
-  .card-checkbox p{
-    font-size: 18px!important;
+  .card-checkbox p {
+    font-size: 18px !important;
   }
 }
-@media (max-width:833px) {
-  .card-recommended p{
-      font-size: 17px!important;
-    }
-    .card-recommended h1{
-      font-size: 17px!important;
-    }
+@media (max-width: 833px) {
+  .card-recommended p {
+    font-size: 17px !important;
   }
+  .card-recommended h1 {
+    font-size: 17px !important;
+  }
+}
+.card-text-about {
+  border-radius: 25% 15% !important;
+  height: 420px !important;
+  transition: 1s;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+@keyframes moveForever {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-10px, -15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.card-text-about {
+  border: 2px solid #000;
+  padding: 20px;
+  /* animation: moveForever 2s ease-in-out infinite; */
+  /* Optional: Add a shadow effect to complement the animation */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.part_1 {
+  border-top-left-radius: 35% !important;
+  border-bottom-left-radius: 5% !important;
+  height: 400px !important;
+  /* animation: moveForever 2s ease-in-out infinite; */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.part_3 {
+  border-top-right-radius: 5% !important;
+  border-bottom-right-radius: 35% !important;
+  height: 400px !important;
+
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.part_2 {
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  /* animation: moveForever 2s ease-in-out infinite; */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.container-fluid .text {
+  position: absolute;
+  animation: moveForever 2s ease-in-out infinite;
+  bottom: -90px;
+  font-weight: bold;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  letter-spacing: 2px; /* Add spacing for a modern look */
+}
+.typo {
+  font-size: 25rem !important;
+  font-family: "Jersey 10", serif;
+}
+.card-text-about h1 {
+  font-family: "Jersey 10", serif;
+  font-size: 4rem !important;
+}

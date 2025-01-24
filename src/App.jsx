@@ -4,6 +4,7 @@ import Home from "./page/Home.jsx";
 import Find from "./page/Find.jsx";
 import Advice from "./page/Advice.jsx";
 import Details from "./page/Details.jsx";
+import About from "./page/About.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,27 +16,15 @@ const router = createBrowserRouter([
       },
       {
         path: "find",
-        element: (<Find></Find>
-          
-        ),
+        element: <Find></Find>,
       },
       {
         path: "advice",
-        element: (
-         <Advice></Advice>
-        ),
-      },
-      {
-        path: "community",
-        element: (
-          <h2 className="text-center text-purple-600 font-bold">Community</h2>
-        ),
+        element: <Advice></Advice>,
       },
       {
         path: "about",
-        element: (
-          <h2 className="text-center text-orange-600 font-bold">About Page</h2>
-        ),
+        element: <About />,
       },
       {
         path: "*",
@@ -50,10 +39,9 @@ const router = createBrowserRouter([
       //   element: <Details></Details>,
       // },
       {
-        path:"details/:id",
-        element:<Details></Details>,
-      }
-    
+        path: "details/:id",
+        element: <Details></Details>,
+      },
     ],
   },
 ]);
