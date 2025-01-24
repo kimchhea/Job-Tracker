@@ -24,6 +24,7 @@ body {
 }
 
 .navbar {
+  /* font-family: "Jersey 10", serif; */
   background-color: var(--color-navy-gray) !important;
   color: var(--color-light-gray) !important;
   padding: 1rem;
@@ -204,32 +205,41 @@ Link .nav-link:focus {
   height: 400px !important;
   /* animation: moveForever 2s ease-in-out infinite; */
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid #000;
+
 }
 .part_3 {
   border-top-right-radius: 5% !important;
   border-bottom-right-radius: 35% !important;
   height: 400px !important;
-
+  border: 2px solid #000;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
 }
 .part_2 {
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
+  border: 2px solid #000;
   /* animation: moveForever 2s ease-in-out infinite; */
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
 }
-.container-fluid .text {
+.container-fluid .text-typo {
   position: absolute;
   animation: moveForever 2s ease-in-out infinite;
-  bottom: -90px;
+  bottom: -60px;
+  left: 50px;
   font-weight: bold;
+  font-size: 19rem !important;
+  font-family: "Jersey 10", serif;
+  color: transparent; 
+  background-image: url(https://i.pinimg.com/originals/7b/34/dd/7b34dd758aa34cb92ca19f7dec026a50.gif);
   text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
   letter-spacing: 2px; /* Add spacing for a modern look */
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
-.typo {
-  font-size: 25rem !important;
-  font-family: "Jersey 10", serif;
-}
+
 .card-text-about h1 {
   font-family: "Jersey 10", serif;
   font-size: 4rem !important;

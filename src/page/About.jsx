@@ -25,7 +25,6 @@ const About = () => {
             here to support your journey .
           </p>
         </div>
-
         <div className="card-img ">
           <div className="col-12 d-flex gap-1">
             <div className="col-4 part_1 overflow-hidden" data-aos="fade-right">
@@ -41,8 +40,8 @@ const About = () => {
         </div>
       </div>
       <div className="container-fluid">
-        <div className="col-12 text">
-          <h1 className="typo">JOB-TRACKER</h1>
+        <div className="col-11 text-typo">
+          COMMING-SOON
         </div>
       </div>
     </div>
