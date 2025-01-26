@@ -5,6 +5,7 @@ import Find from "./page/Find.jsx";
 import Advice from "./page/Advice.jsx";
 import Details from "./page/Details.jsx";
 import About from "./page/About.jsx";
+import Login from "./page/Login.jsx"; 
 const router = createBrowserRouter([
   {
     path: "/",
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path:"login",
-        element:<h2>Login page</h2>
+        element:<Login></Login>
       }
     ],
   },
