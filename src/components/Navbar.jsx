@@ -22,7 +22,7 @@ const Navbar = () => {
                Job-Tracker
             </h2>
           </div>
-          <ul className="left-nav d-flex gap-3 fs-3 px-3 list-unstyled pt-2  ">
+          <ul className="left-nav d-flex gap-3  px-3 list-unstyled pt-2  ">
             {links.map((link, index) => ( 
               <li key={index} className="nav-item  text-light">
                 <Link className="nav-link" to={link.path}>
