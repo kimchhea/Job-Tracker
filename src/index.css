@@ -171,6 +171,7 @@ Link .nav-link:focus {
     font-size: 17px !important;
   }
 }
+/* card-text about */
 .card-text-about {
   border-radius: 25% 15% !important;
   height: 420px !important;
@@ -204,38 +205,31 @@ Link .nav-link:focus {
   border-bottom-left-radius: 5% !important;
   height: 400px !important;
   /* animation: moveForever 2s ease-in-out infinite; */
-  box-shadow: 
-  rgba(0, 0, 0, 0.4) -5px 5px,       /* Black with 40% opacity */
-  rgba(75, 0, 130, 0.3) -10px 10px, /* Deep Purple with 30% opacity */
-  rgba(50, 0, 65, 0.2) -15px 15px,  /* Blackish Purple with 20% opacity */
-  rgba(37, 0, 55, 0.1) -20px 20px,  /* Black-Purple with 10% opacity */
-  rgba(20, 0, 30, 0.05) -25px 25px; /* Very Dark Black-Purple with 5% opacity */
-
-
+  box-shadow: rgba(0, 0, 0, 0.4) -5px 5px,
+    /* Black with 40% opacity */ rgba(75, 0, 130, 0.3) -10px 10px,
+    /* Deep Purple with 30% opacity */ rgba(50, 0, 65, 0.2) -15px 15px,
+    /* Blackish Purple with 20% opacity */ rgba(37, 0, 55, 0.1) -20px 20px,
+    /* Black-Purple with 10% opacity */ rgba(20, 0, 30, 0.05) -25px 25px; /* Very Dark Black-Purple with 5% opacity */
 }
 .part_3 {
   border-top-right-radius: 5% !important;
   border-bottom-right-radius: 35% !important;
   height: 400px !important;
-  box-shadow: 
-  rgba(75, 0, 130, 0.4) 5px 5px,     /* Deep Purple with 40% opacity */
-  rgba(50, 0, 65, 0.3) 10px 10px,    /* Blackish Purple with 30% opacity */
-  rgba(37, 0, 55, 0.2) 15px 15px,    /* Dark Black-Purple with 20% opacity */
-  rgba(20, 0, 30, 0.1) 20px 20px,    /* Very Dark Black-Purple with 10% opacity */
-  rgba(10, 0, 15, 0.05) 25px 25px;   /* Subtle Black-Purple with 5% opacity */
-
+  box-shadow: rgba(75, 0, 130, 0.4) 5px 5px,
+    /* Deep Purple with 40% opacity */ rgba(50, 0, 65, 0.3) 10px 10px,
+    /* Blackish Purple with 30% opacity */ rgba(37, 0, 55, 0.2) 15px 15px,
+    /* Dark Black-Purple with 20% opacity */ rgba(20, 0, 30, 0.1) 20px 20px,
+    /* Very Dark Black-Purple with 10% opacity */ rgba(10, 0, 15, 0.05) 25px
+      25px; /* Subtle Black-Purple with 5% opacity */
 }
 .part_2 {
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
-  box-shadow: 
-  rgba(75, 0, 130, 0.4) 0px 5px,     /* Deep Purple with 40% opacity */
-  rgba(50, 0, 65, 0.3) 0px 10px,    /* Blackish Purple with 30% opacity */
-  rgba(37, 0, 55, 0.2) 0px 15px,    /* Dark Black-Purple with 20% opacity */
-  rgba(20, 0, 30, 0.1) 0px 20px,    /* Very Dark Black-Purple with 10% opacity */
-  rgba(10, 0, 15, 0.05) 0px 25px;   /* Subtle Black-Purple with 5% opacity */
-
-  
+  box-shadow: rgba(75, 0, 130, 0.4) 0px 5px,
+    /* Deep Purple with 40% opacity */ rgba(50, 0, 65, 0.3) 0px 10px,
+    /* Blackish Purple with 30% opacity */ rgba(37, 0, 55, 0.2) 0px 15px,
+    /* Dark Black-Purple with 20% opacity */ rgba(20, 0, 30, 0.1) 0px 20px,
+    /* Very Dark Black-Purple with 10% opacity */ rgba(10, 0, 15, 0.05) 0px 25px; /* Subtle Black-Purple with 5% opacity */
 }
 .container-fluid .text-typo {
   position: absolute;
@@ -245,7 +239,7 @@ Link .nav-link:focus {
   font-weight: bold;
   font-size: 20rem !important;
   font-family: "Jersey 10", serif;
-  color: transparent; 
+  color: transparent;
   background-image: url(https://i.pinimg.com/originals/7b/34/dd/7b34dd758aa34cb92ca19f7dec026a50.gif);
   text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
   letter-spacing: 2px; /* Add spacing for a modern look */
@@ -266,18 +260,38 @@ Link .nav-link:focus {
   background-image: url(https://i.pinimg.com/originals/6d/92/a1/6d92a112e82c8e19fd9e01ef6f0e9299.gif);
 }
 /* nav */
-.nav-link{
+.nav-link {
   font-family: "Jersey 10", serif;
-  font-size: 2.6rem!important;
+  font-size: 2.6rem !important;
 }
-.logo-img h2{
+.logo-img h2 {
   font-family: "Jersey 10", serif;
-  font-size: 2.9rem!important;
+  font-size: 2.9rem !important;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  background-image: url(https://i.pinimg.com/originals/c4/5f/2f/c45f2fb86e38f76440eb6420ff153924.gif)
-
+  background-image: url(https://i.pinimg.com/originals/c4/5f/2f/c45f2fb86e38f76440eb6420ff153924.gif);
+}
+.col-login {
+  font-family: "Jersey 10", serif;
+}
+.card-text-login-page h1 {
+  font-size: 8rem !important;
+}
+.card-login-image {
+  height: 100% !important;
+}
+.card-login-image .card-img {
+  height: 100% !important;
+}
+.login-page input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #012840;
+}
+.login-page select:focus {
+  box-shadow: none;
+  border-color: #012840;
 }
