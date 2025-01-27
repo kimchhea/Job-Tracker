@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className="container px-4 d-flex bg-light rounded rounded-5">
@@ -21,7 +21,9 @@ const Login = () => {
             </div>
             <div className="card-text-login-page px-4">
               <h1 className="ps-4">GET START</h1>
-              <p className="fs-2 ps-4 pt-0">Alrady has an account ? sign in</p>
+              <p className="fs-2 ps-4 pt-0">
+                Alrady has an account ? <Link to={"Login/Signin"}>Sign in</Link>
+              </p>
             </div>
             {/*  */}
             <form action="" className="px-5 login-page">
@@ -58,7 +60,11 @@ const Login = () => {
                   Country
                 </label>
                 <div className="input-group">
-                  <select name="country" id="country" className="form-select py-2">
+                  <select
+                    name="country"
+                    id="country"
+                    className="form-select py-2"
+                  >
                     <option value="cam">Cambodia</option>
                     <option value="usa">USA</option>
                     <option value="canada">Canada</option>
@@ -66,16 +72,21 @@ const Login = () => {
                   </select>
                 </div>
               </div>
-              <button className="btn btn-secondary w-100 mt-4 mb-2 fs-5">Sign Up</button>
+              <button className="btn btn-secondary w-100 mt-4 mb-2 fs-5">
+                Sign Up
+              </button>
             </form>
           </div>
         </div>
       </section>
       <section className="col-6">
         <div className="card-login-image  py-4 ">
-            <div className="card-img  rounded rounded-5 overflow-hidden">
-                <img src="https://i.pinimg.com/736x/90/ea/97/90ea97757fd683ac4ddc6ce2b8798f70.jpg" alt="" />
-            </div>
+          <div className="card-img  rounded rounded-5 overflow-hidden">
+            <img
+              src="https://i.pinimg.com/736x/90/ea/97/90ea97757fd683ac4ddc6ce2b8798f70.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </section>
     </div>

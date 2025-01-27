@@ -5,7 +5,7 @@ import Find from "./page/Find.jsx";
 import Advice from "./page/Advice.jsx";
 import Details from "./page/Details.jsx";
 import About from "./page/About.jsx";
-import Login from "./page/Login.jsx"; 
+import Login from "./page/Login.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -44,9 +44,15 @@ const router = createBrowserRouter([
         element: <Details></Details>,
       },
       {
-        path:"login",
-        element:<Login></Login>
-      }
+        path: "login",
+        element: <Login></Login>,
+        children: [
+          {
+            path: "Signin",
+            element: <h2>Sign in page</h2>,
+          },
+        ],
+      },
     ],
   },
 ]);
