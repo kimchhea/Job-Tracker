@@ -58,7 +58,7 @@ function Home() {
                       <button className="btn btn-secondary fs-5 ">
                         <Link
                           to={`details/${data.id.toString()}`}
-                          className="nav-link"
+                          className="nav-link fs-3"
                         >
                           Details
                         </Link>

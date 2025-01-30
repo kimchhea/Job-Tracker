@@ -173,7 +173,7 @@ Link .nav-link:focus {
 }
 /* card-text about */
 .card-text-about {
-  border-radius: 25% 15% !important;
+  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%!important;
   height: 420px !important;
   transition: 1s;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
