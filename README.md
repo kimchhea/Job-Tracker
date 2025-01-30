@@ -26,11 +26,6 @@ Bootstrap CSS: For styling and responsive design.
 
 Vite: For fast development and build processes.
 
-Backend:(notyet)
-
-Node.js: For server-side logic.
-
-Express.js: For handling API requests.
 
 Database:
 using : mocking database
