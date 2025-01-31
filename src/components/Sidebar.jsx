@@ -58,7 +58,7 @@ const Sidebar = () => {
         </div>
         <p className="pt-4 fs-3ff">Employment type</p>
         <div className="form-check">
-          <input type="checkbox" className="form-check-input" id="Fullday" />
+          <input type="checkbox" className="form-check-input" id="fullday" />
           <label className="form-check-label px-4" htmlFor="fullday">
             Full day
           </label>

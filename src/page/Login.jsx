@@ -22,7 +22,7 @@ const Login = () => {
             <div className="card-text-login-page px-4">
               <h1 className="ps-4">GET START</h1>
               <p className="fs-2 ps-4 pt-0">
-                Alrady has an account ? <Link to={"Login/Signin"}>Sign in</Link>
+                Alrady has an account ? <Link to={"/Register"}>Sign in</Link>
               </p>
             </div>
             {/*  */}
@@ -33,7 +33,7 @@ const Login = () => {
                 </label>
                 <div className="input-group">
                   <input
-                    className="form-control py-2"
+                    className="form-control py-2 fs-5"
                     id="name"
                     placeholder="Your-name"
                     type="text"
@@ -47,7 +47,7 @@ const Login = () => {
                 </label>
                 <div className="input-group">
                   <input
-                    className="form-control py-2"
+                    className="form-control py-2 fs-5"
                     id="email"
                     placeholder="Yourname@gamil.com"
                     type="text"
@@ -63,7 +63,7 @@ const Login = () => {
                   <select
                     name="country"
                     id="country"
-                    className="form-select py-2"
+                    className="form-select py-2 fs-5"
                   >
                     <option value="cam">Cambodia</option>
                     <option value="usa">USA</option>

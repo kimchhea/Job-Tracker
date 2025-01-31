@@ -6,6 +6,7 @@ import Advice from "./page/Advice.jsx";
 import Details from "./page/Details.jsx";
 import About from "./page/About.jsx";
 import Login from "./page/Login.jsx";
+import Register from "./page/Register.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -46,12 +47,10 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <Login></Login>,
-        children: [
-          {
-            path: "Signin",
-            element: <h2>Sign in page</h2>,
-          },
-        ],
+      },
+      {
+        path: "Register",
+        element:<Register/> ,
       },
     ],
   },
