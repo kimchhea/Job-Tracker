@@ -22,7 +22,7 @@ const Login = () => {
             <div className="card-text-login-page px-4">
               <h1 className="ps-4">GET START</h1>
               <p className="fs-2 ps-4 pt-0">
-                Alrady has an account ? <Link to={"/Register"}>Sign in</Link>
+                Don't has an account ? <Link to={"/Register"}>Register</Link>
               </p>
             </div>
             {/*  */}
@@ -42,7 +42,7 @@ const Login = () => {
               </div>
               {/*  */}
               <div>
-                <label htmlFor="" className="form-label ps-1 fs-3 pt-1  pb-0">
+                <label htmlFor="email" className="form-label ps-1 fs-3 pt-1  pb-0">
                   Email
                 </label>
                 <div className="input-group">
@@ -56,24 +56,19 @@ const Login = () => {
               </div>
               {/*  */}
               <div>
-                <label htmlFor="" className="form-label fs-3 ps-1 pt-1 pb-0">
-                  Country
+                <label htmlFor="passwords" className="form-label fs-3 ps-1 pt-1 pb-0">
+                  Passwords
                 </label>
                 <div className="input-group">
-                  <select
-                    name="country"
-                    id="country"
-                    className="form-select py-2 fs-5"
-                  >
-                    <option value="cam">Cambodia</option>
-                    <option value="usa">USA</option>
-                    <option value="canada">Canada</option>
-                    <option value="thi">Thailand</option>
-                  </select>
+                  <input
+                    type="passwords"
+                    className="form-control fs-5 py-2"
+                    placeholder="Example123@"
+                  />
                 </div>
               </div>
-              <button className="btn btn-secondary w-100 mt-4 mb-2 fs-5">
-                Sign Up
+              <button className="btn btn-secondary w-100 mt-4 mb-2 fs-4">
+                login
               </button>
             </form>
           </div>

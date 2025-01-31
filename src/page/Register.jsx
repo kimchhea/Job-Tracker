@@ -41,7 +41,7 @@ const Register = () => {
             </div>
             {/*  */}
             <div>
-              <label htmlFor="" className="form-label ps-1 fs-3 pt-1  pb-0">
+              <label htmlFor="email" className="form-label ps-1 fs-3 pt-1  pb-0">
                 Email
               </label>
               <div className="input-group">
@@ -50,6 +50,20 @@ const Register = () => {
                   id="email"
                   placeholder="Yourname@gamil.com"
                   type="text"
+                />
+              </div>
+            </div>
+                {/*  */}
+                <div>
+              <label htmlFor="passwords" className="form-label ps-1 fs-3 pt-1  pb-0">
+                Passwords
+              </label>
+              <div className="input-group">
+                <input
+                  className="form-control py-2 fs-5"
+                  id="passwords"
+                  placeholder="Example123@"
+                  type="passwords"
                 />
               </div>
             </div>
@@ -72,7 +86,7 @@ const Register = () => {
               </div>
             </div>
             <button className="btn btn-secondary w-100 mt-4 mb-2 fs-5">
-              Sign Up
+              Register
             </button>
           </form>
         </div>
@@ -80,9 +94,9 @@ const Register = () => {
     </section>
     <section className="col-6">
       <div className="card-login-image  py-4 ">
-        <div className="card-img  rounded rounded-5 overflow-hidden">
+        <div className="card-img  rounded rounded-4 overflow-hidden">
           <img
-            src="https://i.pinimg.com/736x/90/ea/97/90ea97757fd683ac4ddc6ce2b8798f70.jpg"
+            src="https://i.pinimg.com/736x/6d/30/d1/6d30d1277aecfd7cbf1639c0660e1ab7.jpg"
             alt=""
           />
         </div>

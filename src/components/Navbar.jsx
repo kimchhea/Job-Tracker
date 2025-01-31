@@ -4,7 +4,7 @@ import { Aperture } from "lucide-react";
 import { useState } from "react";
 const links = [
   { label: "Home", path: "/" },
-  { label: "Find Job", path: "/find" },
+  { label: "Find Job", path: "find" },
   { label: "Advice", path: "Advice" },
   // { label: "Community", path: "community" },
   { label: "About us", path: "about" },
