@@ -41,7 +41,7 @@ const Login = () => {
     e.preventDefault(); // Stop page from reloading
     let formIsValid = true;
   
-    // Validate ALL fields again before submitting
+    // Validate ALL fields again before submitti
     Object.keys(FormData).forEach((key) => {
       validateField(key, FormData[key]); // Re-check each field
       if (!FormData[key].trim() || error[key]) formIsValid = false; // Check for errors
