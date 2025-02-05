@@ -189,7 +189,7 @@ const Register = () => {
         <div className="card-login-image py-4">
           <div className="card-img rounded rounded-4 overflow-hidden">
             <img
-              src="https://i.pinimg.com/736x/6d/30/d1/6d30d1277aecfd7cbf1639c0660e1ab7.jpg"
+              src="https://i.pinimg.com/736x/7b/32/76/7b32767554774dfa9d9761f5a98dd960.jpg"
               alt="Login Visual"
             />
           </div>
