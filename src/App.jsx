@@ -7,6 +7,7 @@ import Details from "./page/Details.jsx";
 import About from "./page/About.jsx";
 import Login from "./page/Login.jsx";
 import Register from "./page/Register.jsx";
+import Errorpage from "./page/Errorpage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,11 +31,8 @@ const router = createBrowserRouter([
       },
       {
         path: "*",
-        element: (
-          <h2 className="text-center text-gray-600 font-bold">
-            Page Not Found
-          </h2>
-        ),
+        element:<Errorpage/>
+        
       },
       // {
       //   path: "Details",
