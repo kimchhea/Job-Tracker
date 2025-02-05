@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 const Login = () => {
   const [FormData, setFormData] = useState({
     name: "",
@@ -7,6 +7,7 @@ const Login = () => {
     password: "",
   }); // use it for store user input
   const [error, setErrors] = useState({});
+  const navigate = useNavigate();
   // use it for store error
   const validateField = (name, value) => {
     let error = "";
@@ -47,7 +48,13 @@ const Login = () => {
       if (!FormData[key].trim() || error[key]) formIsValid = false; // Check for errors
     });
   
-    if (formIsValid) alert("Login successful!"); // Only submit if no errors
+    if (formIsValid){
+      alert("Login successful!"); // Only submit if no errors
+      navigate('/');
+
+    }
+
+      
   };
   return (
     <div className="container px-4 d-flex bg-light rounded rounded-5">
@@ -92,7 +99,7 @@ const Login = () => {
                 </div>
                 {error.name && <p className="text-danger fs-4 ps-1">{error.name}</p>}
               </div>
-              {/*  */}
+              {/*   */}
               <div>
                 <label
                   htmlFor="email"

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link , useNavigate } from "react-router-dom";
 
 const Register = () => {
   // State for storing form data
@@ -12,7 +12,7 @@ const Register = () => {
 
   // State for storing validation errors
   const [errors, setErrors] = useState({});
-
+  const navigate = useNavigate(); 
   // Validate all form fields
   const validateForm = () => {
     const newErrors = {};
@@ -45,6 +45,7 @@ const Register = () => {
     const isValid = validateForm();
     if (isValid) {
       alert("Registration successful!");
+      navigate('/');
     }
   };
 
